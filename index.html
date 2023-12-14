@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+
+  <link href="input.css" rel="stylesheet">
+  <link href="tailwind.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Caffe & Snack Bar Ritual</title>
+
+</head>
+
+<body>
+  <!-- Mobile Navigation Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <span class="meni-title">Meni</span>
+      <span class="close-btn" onclick="closeMobileMenu()">&times;</span>
+    </div>
+    <div class="mobile-menu-content">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#AboutUs">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <header>
+    <div class="logo">
+      <a href="#">Ritual <span>Caffe</span></a>
+    </div>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#AboutUs">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-nav-icon" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+
+
+  <div class="content">
+    <h2>Caffe & Snack Bar Ritual</h2>
+    <p>Would you like to start the day with a nice coffee?</p>
+  </div>
+
+  <div class="menu" id="menu">
+    <div class="menu-header">
+      <h3>Meni</h3>
+      <h4>Ritual Meni</h4>
+    </div>
+    <div class="menu-content">
+      <div class="hot-coffees">
+        <div class="hot-coffees-image">
+          <img src="img/hot-coffees.jpg" alt="">
+        </div>
+        <div class="hot-coffees-body">
+          <h2>Hot Coffees</h2>
+
+        </div>
+      </div>
+      <div class="cold-coffees">
+        <div class="cold-coffees-image">
+          <img src="img/cold-coffee.jpg" alt="">
+        </div>
+        <div class="cold-coffees-body">
+          <h2>Ice Coffees</h2>
+
+        </div>
+      </div>
+      <div class="fresh-juice">
+        <div class="fresh-juice-image">
+          <img src="img/fresh-juice.jpg" alt="">
+        </div>
+        <div class="fresh-juice-body">
+          <h2>Fresh Juices</h2>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div class="shop" id="shop">
+    <div class="shop-header">
+      <h3>Shop</h3>
+      <h4>Ritual Caffe Drinks</h4>
+    </div>
+    <div class="shop-box">
+      <div class="item-1">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/macchiato.jpg">
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <label class="cash">2.5KM</label>
+            <h3>Macchiato</h3>
+            <label>an espresso coffee drink, topped with a small amount of foamed or steamed milk.</label>
+          </div>
+        </div>
+      </div>
+      <div class="item-2">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/filter.jpg">
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <label class="cash">5KM</label>
+            <h3>Filter Coffee</h3>
+            <label>a type of coffee made by brewing ground coffee beans using a filter that traps the coffee grounds,
+              allowing the brewed liquid to pass through.</label>
+          </div>
+        </div>
+      </div>
+      <div class="item-3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/espresso.jpg">
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <label class="cash">2KM</label>
+            <h3>Espresso</h3>
+            <label>a concentrated form of coffee served in small, strong shots. </label>
+          </div>
+        </div>
+      </div>
+      <div class="item-4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/capuccino.jpg">
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <label class="cash">3KM</label>
+            <h3>Capuccino</h3>
+            <label>an espresso coffee drink, topped with a small amount of foamed or steamed milk.</label>
+          </div>
+        </div>
+      </div>
+      <div class="item-5">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/orangejuice.jpg">
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <label class="cash">5KM</label>
+            <h3>Orange Juice</h3>
+            <label>pure orange essence captured in every sip, freshly squeezed for a burst of natural citrus goodness.</label>
+          </div>
+        </div>
+      </div>
+      <div class="item-6">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/lemonade.jpg">
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <label class="cash">3.5KM</label>
+            <h3>Lemonade</h3>
+            <label>Crafted with hand-squeezed lemons and pure cane sugar.</label>
+          </div>
+        </div>
+      </div>
+      <div class="item-7">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/americano.webp">
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <label class="cash">2.5KM</label>
+            <h3>Americano</h3>
+            <label>a coffee drink, brewed by combining rich espresso with hot water for pure and robust flavor.
+
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="item-8">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/hotchocolate.jpg">
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <label class="cash">3KM</label>
+            <h3>Hot Chocolate</h3>
+            <label>a comforting blend of premium cocoa and steamed milk for a soul-warming treat.</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="aboutus" id="AboutUs">
+    <div class="aboutus-box">
+    </div>
+    <div class="content">
+      <p>Established in the vibrant heart of Sarajevo in 2010, Ritual is a small cafe and snack bar that effortlessly
+        marries modern aesthetics with the timeless allure of Bosnian coffee culture. The cozy interior reflects a
+        harmonious blend of contemporary design and local art, creating a relaxing urban retreat. While the menu
+        features a delightful mix of international flavors, the true highlight is the meticulously prepared Bosnian
+        coffee, served in the traditional style. Ritual encapsulates the essence of Sarajevo's cultural harmony, making
+        it a must-visit destination for those seeking a unique fusion of modern sophistication and Bosnian hospitality.
+      </p>
+    </div>
+
+    <div class="contact">
+      <div class="contact-box">
+        <div class="contact-image">
+          <img src="img/contact.PNG" alt="Contact Image">
+        </div>
+      </div>
+      <div class="contact-box">
+        <div class="contact-body">
+          <form>
+            <h2>Contact Us</h2>
+
+            <div class="form-content">
+              <input type="text" id="username" required>
+              <span></span>
+              <label for="name">Name</label>
+            </div>
+
+            <div class="form-content">
+              <input type="email" id="email" required>
+              <span></span>
+              <label for="email">Email</label>
+            </div>
+
+            <div class="form-content">
+              <input type="tel" id="phone" required>
+              <span></span>
+              <label for="phone">Phone</label>
+            </div>
+
+            <div class="form-content">
+              <input type="text" required>
+              <span></span>
+              <label for="message">Message</label>
+            </div>
+
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer" id="contact">
+      <div class="footer-box">
+        <div class="social-media">
+          <a href="https://www.facebook.com/Ritucalcafe/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/caffe_snack_bar_ritual/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

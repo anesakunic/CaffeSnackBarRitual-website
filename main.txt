@@ -1,0 +1,40 @@
+
+
+window.onscroll = function () {  
+    scrollFunction();
+};
+
+function scrollFunction() {
+    var backToTopBtn = document.getElementById("back-to-top-btn"); 
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {  //user scrolled down
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";  //e
+    }
+}
+
+// button is clicked
+function scrollToTop() {     
+    document.body.scrollTop = 0;  
+    document.documentElement.scrollTop = 0; 
+}
+
+// Mobile Menu
+function openMobileMenu() {
+    document.querySelector('.mobile-menu').style.display = 'block';
+  }
+  
+  function closeMobileMenu() {
+    document.querySelector('.mobile-menu').style.display = 'none';
+  }
+  
+  function toggleMobileMenu() {
+    var mobileMenu = document.querySelector('.mobile-menu');
+    if (mobileMenu.style.display === 'block') {
+      mobileMenu.style.display = 'none';
+    } else {
+      mobileMenu.style.display = 'block';
+    }
+  }
+  
