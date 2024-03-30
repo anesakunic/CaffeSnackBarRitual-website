@@ -24,7 +24,7 @@ A convenient "Back to Top" button is implemented for effortless navigation, espe
 Hamburger Menu:
 
 The website features a responsive hamburger menu on smaller screens, providing an organized and accessible navigation experience.
-Usage
+
 
 Explore Pages:
 
